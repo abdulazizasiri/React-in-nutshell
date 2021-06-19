@@ -108,3 +108,10 @@ React hooks are functions that let us hook into the React state and lifecycle fe
 
 
 Props are used to pass dato from one component to another. 
+
+
+### Style 
+
+We can perform inline styling by using <code> style ={{color:'red'}} </code>
+
+

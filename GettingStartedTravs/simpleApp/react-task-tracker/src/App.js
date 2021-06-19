@@ -22,10 +22,15 @@ function App() {
         reminder: false 
     }
 ])
+function deletedTask(id) {
+  setTasks(tasks.filter((e)=>{
+    return e.id !== id 
+  }))
+}
   return (
     <div className="container">
-      <Header title="Hello"/>
-      <Tasks tasks={tasks}/>
+      <Header/>
+      <Tasks tasks={tasks} onDelete={deletedTask}/>
     </div>
 
   );

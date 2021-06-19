@@ -17,7 +17,7 @@ function App() {
     },
     {
         id:3, 
-        text: "Joing SD",
+        text: "joining SD",
         day:"Soon",
         reminder: false 
     }

@@ -109,9 +109,30 @@ React hooks are functions that let us hook into the React state and lifecycle fe
 
 Props are used to pass dato from one component to another. 
 
+- PropTypes  
+
+
+- DefaultProps 
+
+
 
 ### Style 
 
 We can perform inline styling by using <code> style ={{color:'red'}} </code>
+
+
+
+### Commone Question 
+
+
+1- What is the famous warning  "Each child in a list should have a unique "key" prop"?
+
+- Answer: This means that we have a list of items which we are processing without providing  a unique id. There is a prop called "key" which we can use to provide a uniqe id. 
+
+
+
+2- What is the context API? 
+
+
 
 

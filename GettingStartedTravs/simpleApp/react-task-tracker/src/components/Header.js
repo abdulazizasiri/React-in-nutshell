@@ -28,9 +28,9 @@ Header.propTypes = {
 // Creating a style object. 
 
 
-const headerStyle = {
-    color : 'red', 
-    backgroundColor: 'black'
-}
+// const headerStyle = {
+//     color : 'red', 
+//     backgroundColor: 'black'
+// }
 export default  Header;
 

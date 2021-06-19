@@ -18,7 +18,8 @@ Button.defaultProps = {
 
 Button.propTypes  = {
     text: PropTypes.string.isRequired,
-    color: PropTypes.string  // Cuz we have a default, no need to make a required field. 
+    color: PropTypes.string,  // Cuz we have a default, no need to make a required field. 
+    onClick: PropTypes.func
 
 }
 

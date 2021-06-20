@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+const temp = false 
  const Button = ({text, color, onToggle}) => {
     
     return <button onClick={onToggle} style={{backgroundColor:color}}className="btn"> {text}</button>
 }
-
-
 
 
 Button.defaultProps = {

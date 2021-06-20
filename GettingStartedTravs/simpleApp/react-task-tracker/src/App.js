@@ -3,6 +3,7 @@ import Tasks from './components/Tasks'
 import AddTask from './components/AddTask'
 import {useState} from 'react'
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([
     {
         id:1, 
@@ -23,6 +24,16 @@ function App() {
         reminder: false 
     }
 ])
+function addTask(task) {
+  
+
+  console.log(`Task added ${task.day}`)
+  const id = Math.floor(Math.random() * 1000) + 1 
+  const newTask = {id, ...task}
+  setTasks([...tasks, newTask])
+
+
+}
 function deletedTask(id) {
   setTasks(tasks.filter((e)=>{
     return e.id !== id 
@@ -36,8 +47,8 @@ const onToggleTasks =(id) =>
   )
   return (
     <div className="container">
-      <Header/>
-      <AddTask/>
+      <Header onAdd={() => setShowAddTask(!showAddTask)}/>
+      { showAddTask && <AddTask onAddTask={addTask}/>}
       {tasks.length > 0 ? 
       (
       
